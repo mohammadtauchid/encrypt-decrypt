@@ -1,3 +1,6 @@
 # build
 build
 main.spec
+
+# cache
+__pycache__
