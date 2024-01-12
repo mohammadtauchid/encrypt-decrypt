@@ -1,6 +1,6 @@
 def run(param):
-    message, key, encrypt = param
-    
+    message, key, encrypt = param['message'], param['key'], param['encrypt']
+
     result = ''
     key = int(key)
     if not encrypt:

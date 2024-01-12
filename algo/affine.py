@@ -1,5 +1,5 @@
 def run(param):
-    message, key, encrypt = param
+    message, key, encrypt = param['message'], param['key'], param['encrypt']
 
     list_a = [3, 5, 7, 9, 11, 15, 17, 19, 21, 23, 25]
     key = int(key)

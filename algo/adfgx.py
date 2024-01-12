@@ -1,8 +1,8 @@
 import random
 
 def run(param):
-	message, key, encrypt = param
-	
+	message, key, encrypt = param['message'], param['key'], param['encrypt']
+
 	alphabet = list('abcdefghiklmnopqrstuvwxyz')
 	adfgx = list('ADFGX')
 
