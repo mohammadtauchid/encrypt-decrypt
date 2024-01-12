@@ -1,11 +1,6 @@
-def run(message, key, encrypt):
-    """Encrypt or decrypt a message using the Caesar cipher.
-
-    :param message: the message to encrypt or decrypt
-    :param key: the key to use to encrypt or decrypt
-    :param encrypt: True to encrypt, False to decrypt
-    :return: the encrypted or decrypted message
-    """
+def run(param):
+    message, key, encrypt = param
+    
     result = ''
     key = int(key)
     if not encrypt:

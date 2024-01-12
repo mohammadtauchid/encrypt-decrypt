@@ -23,8 +23,14 @@ def args_parser():
 if __name__ == '__main__':
     args = args_parser()
 
+    param = {
+        'message': args.message,
+        'key': args.key,
+        'encrypt': args.encrypt
+    }
+
     try:
-        exec('print(algo.{}.run(args.message, args.key, args.encrypt))'.format(args.algorithm.lower()))
+        exec('print(algo.{}.run(param))'.format(args.algorithm.lower()))
     except AttributeError:
         print('{} algorithm is invalid or not yet implemented.'.format(args.algorithm))
 
