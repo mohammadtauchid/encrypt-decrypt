@@ -33,5 +33,7 @@ if __name__ == '__main__':
         exec('print(algo.{}.run(param))'.format(args.algorithm.lower()))
     except AttributeError:
         print('{} algorithm is invalid or not yet implemented.'.format(args.algorithm))
+    except Exception as e:
+        print('An error occured: {}'.format(e))
 
     print(args)
